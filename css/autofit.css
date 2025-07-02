@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 16px;
+}
+
+.card {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 200px 200px;  /* two cards side by side */
+  gap: 10px;
+  background: #d36d6d;
+  padding: 10px;
+}
+
+.card {
+  display: grid;
+  /* grid-template-columns: 100px 100px; */
+  /* grid-template-rows: 100px 100px; */
+  /* gap: 10px; */
+  grid-template-rows:subgrid;
+  grid-row: span 2; /* span the same rows as parent */
+  background: white;
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+.header {
+  background: lightblue;
+  padding: 5px;
+}
+
+.content {
+  background: lightgreen;
+  padding: 5px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- which tells the current version of html-->
+<html><!-- root element-->
+    <!-- which contains the Meta data and external links title ,favicons etc -->
+    <head>
+        <title>unordered list</title>
+     
+     
+    </head>
+    <body>
+        <!-- the default symbol for  unordered List is disc symbol-->
+         <h4>DISC SYMBOL(default)</h4>
+        <ul> <!-- unordered List-->
+           <li>Home</li><!-- list Item-->
+           <li>About</li><!-- list Item-->
+           <li>contact</li><!-- list Item-->
+        </ul>
+       
+        <!-- symbols : square ,circle disc(default),none -->
+         <!--style attribute value syntax: property:value ; -->
+         <!-- ex:style="color:red; list-style-type:circle" -->
+          <h4>CIRCLE SYMBOL</h4>
+          <ul style="list-style-type:circle;color: aqua;background-color: red;">
+            <li>Premium Build</li>
+            <li>360° Spinner Wheels</li>
+            <li>Telescopic Handle</li>
+          </ul>
+
+        <h4>SQUARE SYMBOL</h4>
+          <ul style="list-style-type:square;list-style-position:inside;">
+            <li>Premium Build</li>
+            <li>360° Spinner Wheels</li>
+            <li>Telescopic Handle</li>
+          </ul>
+
+        
+        <h4>No SYMBOL</h4>
+          <ul style="list-style-type:none;">
+            <li>Premium Build</li>
+            <li>360° Spinner Wheels</li>
+            <li>Telescopic Handle</li>
+          </ul>
+
+      <h4>inserting the image</h4>
+      <!-- style="list-style-image: url('./assets/2.png');" -->
+
+            <ul >
+            <li>Premium Build</li>
+            <li>360° Spinner Wheels</li>
+            <li>Telescopic Handle</li>
+          </ul>
+
+        <!-- nested list : list inside list -->
+         <ul style="list-style-type:none ;"> <!-- first list-->
+            <li>Home</li>
+            <!-- nested list starts here -->
+            <li>
+                <ul style="list-style-type: none;"><!-- nested  list-->
+                    <li><h3>Services</h3></li>
+                    <li>carwash</li>
+                    <li>bikewash</li>
+                </ul>
+            </li>
+
+         </ul>
+
+    </body>
+
+</html>

@@ -1,0 +1,66 @@
+
+
+.parent{
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    position: relative;
+}
+
+/* realtive */
+.real{
+    border: 2px solid red;
+    padding: 5px;
+    background-color: lightgreen;
+
+    /* positions */
+    /* position: static; default */
+    /* top: 10px; does not apply in static */
+
+    position: relative;
+    top:11px;
+    left:10px
+
+}
+
+.ab{
+    border: 2px solid red;
+    padding: 5px;
+    background-color: rgb(79, 45, 230); 
+    position: absolute; 
+    top:-5px;
+    right:-100px
+
+}
+
+.fix{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid green;
+    background-color: lightcyan;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+.stick{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid green;
+    background-color: lightcyan;
+    position: sticky;
+    top:0;
+}
+
+
+
+
+
+
+
+
+
+

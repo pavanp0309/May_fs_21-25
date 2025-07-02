@@ -1,0 +1,55 @@
+DAY_1
+1.what is css ? write its advantages  & disadvantages ?
+2.write the features of css3 ?
+3.what is selector in css ? why we use it ?
+4.explain different types of selectors?
+5.explain different ways to add css to html ? and its imporatance 
+6.How does a class selector differ from an ID selector? When would you use each?
+
+DAY_2
+7.What does the universal selector (*) do? When might it be useful?
+8.How does a child selector (>) differ from a descendant selector (space)?
+9.How does a adjacent sibling selector (+) differ from a general sibling selector (~)?
+10.What is the CSS Box Model? Explain its components.
+11.How does padding differ from margin?
+12.What is the difference between content-box and border-box for the box-sizing property?
+13.What is the effect of setting a negative margin on an element?
+
+
+DAY_3
+14.What is the difference between relative and absolute positioning?
+15.What is the difference between position: fixed and sticky?
+16.What’s the difference between position: sticky and fixed?
+17.What is the z-index, and how does it work with positioned elements?
+18.How does transform, perspective, or filter affect positioning and stacking context?
+
+Day_4
+19.What is Flexbox and why was it introduced in CSS?
+20.What are the main axis and cross axis in Flexbox?
+21.What is the difference between justify-content and align-items?
+22.How do you center an element both vertically and horizontally using Flexbox?
+23.What does flex: 1 mean and how is it interpreted?
+24.What is the difference between flex-grow, flex-shrink, and flex-basis?
+25.How does flex-wrap work and when should it be used?
+26.What is the use of the order property in Flexbox?
+27.How do align-self and align-items differ in Flexbox?
+28.How do you create a responsive layout using Flexbox?
+
+DAY_5
+29.What is a CSS transition and how does it work?
+30.What is the difference between a transition and an animation in CSS?
+31.What is the purpose of the transition-timing-function property?
+32.What is a CSS transformation? List some common transform functions?
+33.What is the transform-origin property and why is it useful?
+34.Give a real-world example where you would use a transition, a transformation, and an animation.
+35.What is the difference between a transition and an transform in CSS?
+
+DAY_6
+36.What’s the difference between auto-fit and auto-fill?
+37.What is the fr unit and why is it useful in responsive design?
+38.What does justify-content vs justify-items do in a grid?
+39.What is CSS Grid? How is it different from Flexbox?
+40.What problem does minmax() solve? Give example.
+41.What is subgrid?
+
+

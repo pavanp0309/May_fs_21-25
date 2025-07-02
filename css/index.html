@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!-- internal css -->
+ <style>
+    
+    /* selector{
+        property:value
+       key:value;
+    } */
+     b{
+        color: green;
+     }
+     /* element/tag (type) -selector */
+     h4{
+        background-color: red;
+        color: white;
+        text-align: center;
+        width: 200px;
+        border: 2px solid yellow;
+        padding: 10px;
+     }
+     /* id selector */
+     #text{
+      color:pink
+     }
+
+     /* class selector */
+     .c1{
+        background-color: orangered;
+     }
+     .c2{
+        text-align: center;
+     }
+
+     /* group selector */
+     .c1 ,h1,b{
+        border: 2px dotted red;
+     }
+     /* id * class */
+     #g{
+        color: orangered;
+     }
+     .t{
+        color: green;
+     }
+
+
+ </style>
+
+<!-- external css -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <b >GUESS YOUR ANSWER</b>
+    <!-- green-10 pink-1 -->
+    <!-- inline css -->
+     <!-- property:value; or key:value -->
+      <!-- h1: selector---(element/tag selector) -->
+     <h1 style="color: red;text-transform: lowercase;text-align: center;text-decoration: underline;">HELLO CSS DEV</h1>
+     <div style="background-color: lightcyan;border: 2px solid red;width: 100px;border-radius: 10px;padding: 10px;">
+        <p style="color:orangered">IPHONE</p>
+        <p style="color: green;">RS1000</p>
+     </div>
+
+     <!-- internal css -->
+     <h4>internal css styles</h4>
+     <p id="text">Id selector</p>
+     <p id="text" >Id selector</p>
+
+     <h5 class="c1 c2 c3">Class Selector</h5>
+     <h5 class="c1 ">Class Selector</h5>
+     <h6>External css</h6>
+     <strong id="g" class="t c2">hello</strong>
+
+     
+    </body>
+</html>

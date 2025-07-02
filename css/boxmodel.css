@@ -1,0 +1,84 @@
+.card{
+  border:2px solid red;
+  padding-left: 10px;
+  margin: .2rem;
+}
+.card-text{
+  background-color: lightblue;
+ border: 2px dotted blue;
+ padding-left: 20px;
+ padding-top: 10px;
+ /* 1rem--16px 2rem--32px */
+ padding-bottom: 1.5rem;
+ padding-right: 10px;
+ padding: 1.5rem;
+ padding: 1.5rem 2rem; /* pt pb and pl pr*/
+ padding: 1.5rem 2rem .5rem; /* pt , pl&pr and pb*/
+ padding: 1.5rem 2rem .5rem 1.25rem; /* pt-pr and pb pl*/
+
+ margin-right: 10px;
+ margin-left: -15px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin: 2rem;
+ margin: 2rem 1.5rem; /* mt mb and ml mr*/
+ margin: 2rem 1.5rem 1rem; /* mt  ml-mr mb*/
+ margin: 1rem 2rem 1.5rem 1.25rem; /* mt- mr & mb- ml*/
+
+}
+
+.solid{
+ border-style: solid;
+ border-color: red;
+  border-width: 4px;
+ border-top-style: double;
+ border-bottom-style: dashed;
+ border-right-style: dotted;
+ border-left-style:groove;
+ border-top-color: chartreuse;
+ border-bottom-color: rgb(255, 111, 0);
+ border-right-color: rgb(0, 4, 255);
+ border-top-width: 10px;
+ border-bottom-width: 10px;
+ border:2px solid red ;
+
+}
+.dotted{
+  background-color: lightgreen;
+   border-style: double;
+   border-width: 5px;
+   border-color: green;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-radius: 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.dashed{
+   border-style: dashed;
+}
+.double{
+   border-style: double;
+   border-width: 10px;
+   background-color: aquamarine;
+   box-shadow:1px -3px 10px 2px orangered ;
+}
+
+.grooved{
+   border-style: groove;
+}
+.inset{
+ border-style: inset;
+}
+.outset{
+   border-style: outset;
+}
+.riged{
+   border-style: ridge;
+}
+.none{
+   border-style: none;
+}

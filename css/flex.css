@@ -1,0 +1,42 @@
+
+.parent{
+    height:100vh;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column;
+    flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    /* flex-flow:row wrap ; */
+   justify-content: center;
+   /* align-items: center; */
+   /* align-content: center; */
+}
+
+/* common child */
+.child{
+    background-color:gold;
+    border: 2px solid #ff0000;
+    padding: 1rem;
+    margin-top: 2px;
+    flex-basis: 100px;
+    height: 150px;
+}
+.child1{
+    order: 1;
+   /* order: 2; */
+   /* align-self:center ;
+   flex-grow: 2;
+   flex-shrink: 2; */
+   /* flex:1 2 200px ; */
+   background-color: #ff0000;
+   background-color:rgb(21, 220, 21);
+
+}
+.child2{
+    background-color: aliceblue;
+    /* order: 1; */
+    /* flex-basis: 200px; */
+    /* width: 400px; */
+    /* min-width: 400px; */
+}

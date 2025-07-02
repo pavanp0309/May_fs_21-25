@@ -1,0 +1,50 @@
+
+
+/* removing the default styles */
+.nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.nav-item{
+    list-style-type: none;
+    padding:0px 7px ; /*0px-top&bottom 7px*/
+    transition: all .9s linear;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(29, 29, 29);
+    height: 100px;
+    align-items: center;
+    color: white;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 120px;
+    padding: .5rem;
+    border: none;
+    font-size: .96rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px  seashell;
+}
+
+/* transition properties */
+.nav-item:hover{
+  transform: translateY(-10px);
+
+}
+.nav-link:hover{
+    color: red;
+}

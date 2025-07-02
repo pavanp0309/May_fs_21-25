@@ -1,0 +1,28 @@
+.services{
+    display: flex;
+    justify-content: center;
+}
+
+.card-layout{
+    display: flex;
+    background-color: yellow;
+    width: 500px;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    background-color: aqua;
+    border: 2px solid red;
+}
+.card-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.card-child{
+    width: 50px;
+    padding: 1.2rem;
+    background-color: orangered;
+    margin-bottom: 2px;
+}

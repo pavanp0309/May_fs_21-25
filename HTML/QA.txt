@@ -1,0 +1,53 @@
+DAY_1 QA 
+1***.write the difference b/w webpage and website 
+2***.write the difference b/w single page and multi-page website  ? 
+3.explain the Following terminologies 
+     1.URL 
+     2.DOMAIN 
+     3.WWW 
+     4.SERVER 
+4.what is Html ? write its advantages and disadvantages ?
+5.explain the latest features of HTML5 ?
+6***.explain the difference b/w tag and Element ?
+
+Day_2
+7.what are ATTRIBUTES  in Html 
+8.explain the difference b/w p and pre tags ?
+9.explain the difference b/w target=_self  and target="_blank"
+10.what are text_Formatting tags in html ?
+11.explain different types of image formats ?
+12.what are links in htmls? 
+
+Day_3
+13.explain the difference b/w ordered and undordered list 
+14.what is description list and explain it usecases in the website ?
+15.explain the list attributes ?
+16.explain the audio and video formats 
+
+Day_4 
+17 .explain audio and video attributes in html 
+18.explain iframe tag?
+19.what are multimedia tags and write its usecases in the website ?
+
+Day_5
+20 explain the Table attributes in html ?
+21 explain the difference b/w table Elements and and table attributes 
+22.explain the difference b/w cellpadding and cellspacing
+23.explain the difference b/w  rowSpan and colSpan 
+ 
+Day_6 :
+24. explain the difference b/w form-elements and formcontrolls?
+25.explain the difference b/w placeholder and value attribute ?
+26 explain the difference b/w method=get  and method=post ?
+27.explain the difference b/w readonly and disabled & required 
+
+Day_7 
+28.write the difference b/w semantic and non-semantic tags
+29.write the difference b/w div and span tags
+30.write the difference b/w section and div tags
+31.what are svg & write its advantages 
+32 what are entities ?
+33.***what are meta tags explain its importance .
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- current version of html (html5)-->
+<html>
+    <head>
+        <!-- title -->
+        <title>tableELements</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./assets/1.jpg" type="image/x-icon">
+      
+    </head>
+    <body>
+        <h1>TABLE EXAMPLE</h1>
+        <!-- table elements : tr td th thead  tbody  tfoot colgrough col legend -->
+        <table width="100%" cellpadding="10" style="border-collapse: collapse;" border="" >
+
+            <!-- colgrough start -->
+             <colgroup>
+                <col style="background-color: aqua;"><!-- column-->
+                <col ><!-- column-->
+                <col style="background-color: orangered;"><!-- column-->
+            </colgroup>
+            <!-- colgrough end -->
+            <!-- table elements -->
+            <legend>Example Table</legend> <!-- title to the table-->
+            <!-- table headers  start-->
+             <thead>
+             <tr align="center">
+                <th>Name</th>
+                <th>email</th>
+                <th>Mobile</th>
+                <th>Address</th>
+             </tr>
+             </thead>
+              <!-- table headers end-->
+            <!-- table body start -->
+           <tbody>
+            <tr align="center">
+                <td rowspan="2">Ravikumar</td>
+                <td>Ravi@gmail.com</td>
+                <td>33462735645</td>
+                <td>hyderabad jntu</td>
+             </tr>
+             <!-- 2nd data row -->
+            <tr align="center">
+              
+                <td>Ravi@gmail.com</td>
+                <td>33462735645</td>
+                <td rowspan="2">hyderabad jntu</td>
+             </tr>
+             <!-- 3rd data row -->
+            <tr align="center">
+                <td>Ravikumar</td>
+                <td>Ravi@gmail.com</td>
+                <td>33462735645</td>
+               
+             </tr>
+           </tbody>
+
+        </table>
+    </body>
+</html>

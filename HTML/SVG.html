@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <!-- usecases: icons ,barcharts piecharts line graphical content,circle rect ellipse text -->
+    <!-- svg : SCALABLE VECTOR GRAPHICS  -->
+    <!-- advantages :
+       svgs can be animated and it can searched 
+       svgs can be indexed 
+       svgs doesnt loose the picture quality when resized or re-zoomed 
+       svgs increase the seo -->
+
+    <!-- syntax -->
+    <svg
+      width="300px"
+      height="300px"
+      viewbox="0 0 100 100"
+      style="background-color: aqua"
+    >
+      <!-- shapes -->
+      <circle
+        r="20"
+        cx="50"
+        cy="50"
+        fill="orange"
+        stroke="green"
+        stroke-width="2"
+      />
+      <!-- not self closed -->
+      <text x="10" y="70" id=" " fill="red">
+        hello
+        <animate attributeName="x" from="0" to="10" dur="3s" />
+      </text>
+      <circle
+        r="3"
+        cx="59"
+        cy="45"
+        fill="white"
+        stroke="green"
+        stroke-width="2"
+      >
+        <!-- animation -->
+        <animate
+          attributeName="r"
+          from="3"
+          to="4"
+          dur="3s"
+          repeatCount="indefinite"
+        />
+      </circle>
+      <circle
+        r="3"
+        cx="40"
+        cy="45"
+        fill="white"
+        stroke="green"
+        stroke-width="2"
+      >
+        <animate
+          attributeName="cx"
+          from="0"
+          to="45"
+          dur="3s"
+          repeatCount="indefinite"
+        />
+      </circle>
+      <!-- ellipse -->
+      <ellipse
+        rx="3"
+        ry="5"
+        cx="50"
+        cy="55"
+        fill="white"
+        stroke="red"
+        id="ellipse"
+      />
+      <!-- rect -->
+      <rect
+        width="10px"
+        height="10px"
+        x="20"
+        y="45"
+        fill="white"
+        stroke="red"
+      />
+      <line x1="1" y1="10" x2="100" y2="10" stroke="red" />
+    </svg>
+
+
+  </body>
+</html>

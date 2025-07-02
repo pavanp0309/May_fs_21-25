@@ -1,0 +1,135 @@
+
+.cart{
+ position: relative;
+}
+.bi{
+    color: red;
+}
+.val{
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    font-size: 2px;
+    color: green;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.message{
+    position: relative;
+    margin-top: 10px;
+}
+
+.mval{
+    position: absolute;
+    top: -4px;
+    left:13px;
+    font-size: 7px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+}
+
+.navbar{
+    background-color: aquamarine;
+    width: 120px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px rgb(196, 82, 82);
+    position: relative;
+}
+.bi-telephone,.bi-house{
+    margin:0px 5px ;
+}
+.navbar>.bi:hover{
+   color: blue;
+}
+.calval{
+    position: absolute;
+    left: 35px;
+    top: 3px;
+}
+.meval{
+  position: absolute;
+  top: -1px;
+  right:25px;
+  font-size: 10px;
+  background-color: green;
+  color: white;
+  border-radius:10px ;
+}
+
+.card{
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border: 2px solid red;
+  position: relative;
+  background-color: aquamarine;
+}
+
+.card-img{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    border: 2px solid green;
+
+}
+.img-2{
+ z-index: 10;
+}
+.img-1{
+    top: 50px;
+    right: -30px;
+    z-index: 16;
+   
+}
+.img-3{
+    top: -25px;
+    right: -70px;
+    z-index: 15;
+}
+.info{
+    border: 2px solid green;
+    width: 200px;
+    padding: 10px;
+    background-color: aquamarine;
+    position: fixed;
+    right:0;
+}
+.social-icons{
+    background-color: bisque;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 0px;
+    top:100px;
+   
+}
+.social-icons>.bi{
+    margin: 0px 10px;
+    font-size: 2rem;
+}
+.social-icons>.bi:hover{
+  background-color: greenyellow;
+
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
+.header-img{
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    top:0;
+}
+

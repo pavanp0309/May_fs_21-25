@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            form-Controls
+        </title>
+    </head>
+    <body>
+        <!-- form_contolls : required readonly min max maxlength pattern size disabled action method type  -->
+       <!-- basic form_validation -->
+        <form method="" action="./Doubts.html">
+            <input type="text" required><br>
+            <input type="text" pattern="\d{5}"><br>
+            <input type="email" required><br>
+            <input type="text"   maxlength="10"       placeholder="username" ><br>
+            <input type="tel"    pattern="{0-9}{10}"    placeholder="mobile" ><br>
+            <input type="number" min="1" max="10" >
+            <input type="number" min="3" max="20" step="5" >
+            <input type="text" value="terms and conditions" readonly>
+            <input type="text" value="ai" disabled>
+            <input type="password" pattern="[A-Za-z]" placeholder="enter only alphabets format" >
+            <select name="" id="" multiple>
+                <option value="" >Home</option>
+                <option value="" selected>about</option>
+                <option value="">contact</option>
+                <option value="">services</option>
+            </select>
+            <input type="file" accept="1">
+            <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+HTML :HYPERTEXT MARKUP LANGUAGE
+HYPERTEXT : the text which has link (hyperlinks) which is used for concating 1 or more webpage 
+MARKUP : Nothing but collection of tags : img p heeading audion etc..
+
+HTML is used for buidling structurre of the webpages or website 
+
+CURRENT VERSION : 5.3  
+                 HTML 5 
+
+FEATURES : 
+        MULTIMEDIA TAGS  :image, video audio iframes (embed (webpage in a webpage))
+        semantic Tags : (clear information to browser and devleopers)
+                     header ,footer,section nav main aside etc... 
+        FORMEHNACEMENTS :url date time month  ,color ,file range etc..
+        SVG  : SCALABEL VECTOR GRAPHICS  (graphs,circle ,line ellipse emoji  ) ,animated searched  seo 
+        canvas : used for drawwing   whiteboards ,
+        Entities : special character 
+        webapis : localstorage,sessionstorage. geolocation
+
+<DOCTYPE HTML/>  : IT TELLS THE CURRENT VERSION OF HTML  (HTML5)
+
+TERMINOLOGIES:
+
+TAG : which represents (tells) what type of content we are presenting in the Browser 
+ eg: p  h1 img audio etc..
+
+ELEMENT: a tag along with some content inside it 
+<>phello world</p>---container tags
+<p>===> opening tags
+</p>===> opening tags
+"hello world"
+
+TYPES OF ELEMENTS 
+CONTAINER ELEMENTS : a tag with both opening and closing with some content 
+   eg: <h1>HII EVeryone</h1>
+EMPTY ELEMENTS /VOID ELEMENTS : which doesnt contain any content inside  it 
+   eg: <img /> <hr/> <br/>
+
+Comments in Html comments readiability and maintaibility of the code 
+<!-- comment here -->
+
+
+DAY_1 OBJECTIVE
+WHAT IS HTML 
+HTML5 FEATURES 
+structure of Html 
+difference b/w tag and element 
+headings tag
+
+
+Day_2
+Paragraphs 
+text_Formatting tags 
+links  :
+Qa
+
+
+Links :(hyperlinks)
+Usecases :
+navbar 
+footers 
+clickable product cards 
+
+
+ATTRIBUTES: which give additional information to tag or elemennt 
+ eg: height width href alt target  src id class 
+
+
+<a href="" target=''>text</a>
+
+
+Day_3
+list tags 
+QA 
+ 
+
+list tags :
+TYPES
+  1.undordered List  (UL)
+  2.ordered List  (ol)
+  3.description list  (dl)
+TERMINOLOGIES :
+   li: list -item
+   dt: description Term
+   dd: description data
+ATTRIBUTES 
+  style :
+  type : type of numbering system 
+    Indicates the numbering type:
+
+'a' indicates lowercase letters,
+'A' indicates uppercase letters,
+'i' indicates lowercase Roman numerals,
+'I' indicates uppercase Roman numerals,
+and '1' indicates numbers (default).
+The type set is used for the entire list unle
+  start : wehere the number ,character need to start 
+  reveresed :  reveres the order of number 
+
+Usecases 
+   undordered List  (UL) :    
+      Navbar ,sidebar ,dropdown  footer,cards ,product info 
+   ordered List  (ol)
+    receipes menus instructions  etc ...
+   description list  (dl) 
+     faq (frequently asked question) ,product -info  etc..
+
+
+DAY_4 
+Favicons
+MULTIMEDIA TAGS 
+   audio video images iframes 
+project : combining all tags 
+Qa
+
+
+IMage Formats : jpg  ,png ,jpeg ,svg ,gif webp etc..
+
+
+Day_5 (Objective)
+table 
+examples
+qa 
+
+
+Tables 
+usecases:
+difference 
+ranking system  
+products 
+userlists
+webpage or weblayout
+
+
+TERMINOLOGIES
+th: table Header 
+td: table data 
+tr: table row 
+
+Table Elements : use for creating the structure of tables 
+eg: th td tr  colgrough col legend tbody thead tfoot 
+
+Table attributes : which is used for controlling the table Elements 
+cellpadding : these provide spaces around the content 
+cellspacing: these provide spaces around the table cell (outside of the border) ,(works only when we have double border)
+align : center |left |right  : used for alignment of content inside the table
+bgcolor: which provide color the table 
+border : which adds a thick line to the table and table cellls
+rowSpan : which is used for combining two or more row
+colSpan : which is used for combining two or more cols
+style 
+width 
+
+Day_6 Objective 
+FORMS_ELEMENTS&Form_controlls
+
+FORMS_ELEMENTS : which are used for creating the structure of the Forms 
+ eg: form input label button select option optgrough fieldset legend datalist  textarea etc.
+Form_controlls : which are used for controlling the FORMS_ELEMENTS
+   eg: required,readonly ,disabled ,min max maxlength size type ,action 
+
+ method="get" : sends the data in the form of url format (key & value pairs) and length of characters is limited to 2050 and data is so not secure
+         usesage :search ,contact-forms etc 
+
+UseCase : used for collecting the information from user/end client /end user  
+ type of information : name ,email,dob ,mobile educational details ,pdf ,role-selction(dropdown),color ,gender ,image ,checklist 
+
+ all type apps used forms 
+  eg: eccomerce ,ticket booking system ,job portals,astrology etc ..
+
+
+

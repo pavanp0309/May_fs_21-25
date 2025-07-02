@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FormELements</title>
+    <style>
+      input {
+        border: 2px solid red;
+      }
+      #fname:focus {
+        padding: 5px;
+        border: 2px solid green;
+        outline: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- form elements  input lable select option optgrouph ,
+         textarea ,datalist  button fieldset and legend -->
+
+    <!-- input lable from-elements -->
+    <form>
+      <label for="fname">FirstName</label> <br />
+      <input type="text" id="fname" placeholder="enter ur name" name="fname" />
+    </form>
+
+    <!-- select & option -->
+    <form method="post">
+      <select name="m" id="">
+        <option value="Mobile">Mobiles</option>
+        <option value="laptops">laptops</option>
+        <option value="kitchen" selected>kitchen</option>
+        <option value="electronics">electronics</option>
+      </select>
+      <input type="submit" />
+    </form>
+
+    <form>
+      <select name="" id="">
+        <optgroup label="Mobiles">
+          <option value="">Vivo</option>
+          <option value="">iphone</option>
+          <option value="">sumsung</option>
+        </optgroup>
+        <optgroup label="laptops">
+          <option value="">dell</option>
+          <option value="">macbook</option>
+          <option value="">Hp</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <!-- comments or reviews  -->
+    <form>
+      <textarea
+        name=""
+        id="comment"
+        rows="0"
+        cols="0"
+        maxlength="100"
+      ></textarea>
+    </form>
+
+    <!-- datalist  -->
+    <input list="s" />
+    <datalist id="s">
+      <option value="ind"></option>
+      <option value="pak"></option>
+      <option value="usa"></option>
+    </datalist>
+
+    <form>
+        <!-- personal info -->
+      <fieldset>
+        <legend>PersonalInfo</legend>
+    <label for="">fullname</label><br>
+      <input type="text" placeholder="enter ur name" /><br>
+      <label for="">email</label><br>
+      <input type="email" placeholder="enter ur email" /><br>
+      <label for="">mobile</label><br>
+      <input type="tel" placeholder="enter ur mobile" /><br>
+      </fieldset>
+
+      <!-- company info -->
+        <fieldset>
+        <legend>company info</legend>
+    <label for="">fullname</label><br>
+      <input type="text" placeholder="enter ur name" /><br>
+      <label for="">email</label><br>
+      <input type="email" placeholder="enter ur email" /><br>
+      <label for="">mobile</label><br>
+      <input type="tel" placeholder="enter ur mobile" /><br>
+      </fieldset>
+
+    </form>
+  </body>
+</html>

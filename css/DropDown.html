@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* parent element */
+        .profile{
+            position: relative;
+        }
+        .menu-btn{
+            width: 30px;
+            height: 30px;
+            border: 1px solid green;
+            border-radius: 50%;
+        }
+    /* child element */
+       .dropDown{
+        width: 100px;
+        padding: 15px;
+        background-color: bisque;
+        border-radius: 10px;
+        position: absolute;
+        top: 20px;
+        left:28px;
+        display: none;
+       }
+       /* childs of drodowm */
+      .dropDown a{
+            text-decoration: none; /* removes the underline */
+            display: block;
+            /* display: block; converts inline element into block level to apply height and width prop */
+            padding: 5px;
+           
+        }
+      .dropDown a:hover{
+        background-color: rgb(196, 244, 255);
+        border-radius: 10px;
+        color: rgb(242, 127, 11);
+      }
+
+     .profile:hover .dropDown{
+          display: block;
+     }
+
+
+      .subDropdown{
+       position: relative;
+      }
+      .sub-dropdown-links{
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        left: 103px;
+        background-color: red;
+        display: none;
+      }
+     .subDropdown:hover .sub-dropdown-links{
+        display: block;
+     }
+     .nesteddropdow{
+        position: relative;
+     }
+    .nested-link{
+        position: absolute;
+        top: 10px;
+        left: 65px;
+        padding: 10px;
+        background-color: aqua;
+        display: none;
+
+    }
+    .nesteddropdow:hover .nested-link{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+   <div class="profile">
+    <img src="./assets/1.jpg" class="menu-btn"/>
+    <div class="dropDown">
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        
+        <div class="subDropdown">
+            <a href="">settings</a>
+            <div class="sub-dropdown-links">
+                <a href="">edit</a>
+                 <div class="nesteddropdow">
+                    <a href="">changepic</a>
+                    <div class="nested-link">
+                        <a href="">Home</a>
+                        <a href="">about</a>
+                    </div>
+                 </div>
+                <a href="">save</a>
+            </div>
+        </div>
+        <a href="">logout</a>
+    </div>
+   </div>
+</body>
+</html>

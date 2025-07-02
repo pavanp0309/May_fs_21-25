@@ -1,0 +1,33 @@
+
+
+.parent{
+    display: grid;
+    grid-template-columns:20% 80%;
+    grid-template-rows: 100px 600px 100px;
+    grid-template-areas: 
+     "h h"
+     "a s"
+     "f f"
+    ;
+}
+
+/* .child properties */
+.child{
+    padding: 2rem;
+    border: 2px solid red;
+    background-color: gold;
+    text-align: center;
+}
+
+.header{
+    grid-area: h;
+}
+.sidebar{
+    grid-area: a;
+}
+.main{
+    grid-area: s;
+}
+.footer{
+    grid-area: f;
+}

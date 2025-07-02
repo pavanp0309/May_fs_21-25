@@ -1,0 +1,71 @@
+
+
+.parent{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px 100px 200px;
+    gap: 2px;
+    grid-template-areas:
+    "a a a a"
+    "b c d d"
+    "b e e f"
+    "b g h i"
+    "b j j j"
+    ;
+}
+
+.child{
+    background-color: gold;
+    padding: 2rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.child-1{
+    grid-area: a;
+    background-image: url('./assets/bg-1.jpg');
+}
+.child-2{
+    grid-area: b;
+    background-image: url('./assets/bg-1.jpg');
+}
+.child-3{
+    grid-area: c;
+    background-image: url('./assets/2.jpg');
+}
+.child-4{
+    grid-area: d;
+    background-color: orangered;
+    background-image: url('./assets/cheese-burger.png');
+}
+.child-5{
+    grid-area: e;
+    background-image: url('./assets/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+.child-6{
+    grid-area: f;
+    background-image: url('./assets/bg-2.jpg');
+}
+.child-7{
+    grid-area: g;
+    background-color: aquamarine;
+    background-image: url('./assets/1.jpg');
+}
+.child-8{
+    grid-area: h;
+    background-color: cyan;
+}
+.child-9{
+    grid-area:i ;
+}
+.child-10{
+    grid-area: j;
+    background-image: url('./assets/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

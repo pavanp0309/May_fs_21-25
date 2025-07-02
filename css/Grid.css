@@ -1,0 +1,52 @@
+
+
+/* .parent styles */
+.parent{
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 100px 200px 150px ; */
+    /* grid-template-columns: 20% 50% 20% ; */
+    /* grid-template-columns: 10rem 20rem; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns:150px repeat(2,auto) 100px; */
+    /* grid-template-columns: 1fr 1fr 2fr ; */
+    grid-template-columns: 100px 120px ;
+    grid-template-rows: 100px 100px 100px;
+    /* gap: 5px; Row & column-gaps */
+    /* row-gap:5px ;
+    column-gap: 5px; */
+    /* gap: 10px; */
+    justify-content: center;
+    align-content: center;
+    place-content: center;
+    /* align-items: center;
+    justify-items: center;
+    place-items: center start; */
+}
+
+
+/* child styles */
+.child {
+    background-color: gold;
+    padding: 2rem;
+    border: 2px solid red;
+}
+
+
+.child-1{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/3; */
+    /* grid-column: span 2; */
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+}
+
+.child-2{
+    /* grid-row-start:2 ;
+    grid-row-end:4 ; */
+    /* grid-row: 2/4; */
+    grid-row: span 2;
+    place-self: center;
+}

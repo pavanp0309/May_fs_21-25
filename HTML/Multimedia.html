@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- title -->
+        <title>Multimedia</title>
+        <!-- favicons -->
+         <link rel="shortcut icon" href="./assets/laugh.png" type="image/x-icon">
+        
+        
+    </head>
+    <body>
+
+        <!-- image tag --> 
+         <!-- attributes for the image tags : src ,alt(alternative text for image)  width height id class style-->
+          <!-- inline level element : which occupies only content width in the browser and starts in a same line -->
+       
+             <img src="./assets/laugh.png" alt="" width="100px">
+
+
+             <!-- audio tags  -->
+              <!-- audio formats : mp3 ogg wav pcm aac flac  -->
+            <!--  audio attributes  controls -->
+              <audio controls  autoplay muted loop>
+                 <source src="./assets/song1.mp3" type="audio/mp3">
+                 <source src="./assets/song2.mp3" type="audio/mp3">
+                 <source src="./assets/song1.mp3" type="audio/mp3">
+                no audio format is supported 
+              </audio>
+
+              <!-- video tag -->
+               <!-- video formats : mp4,MKV,AVI wmv amv mov webm -->
+               <video  controls loop autoplay muted width="300px" height="300px" poster="./assets/laugh.png">
+                <source src="./assets/v1.mp4" type="video/mp4">
+                <source src="./assets/v2.mp4" type="video/mp4">
+                no video format
+               </video>  
+               
+               <!-- IFrame ( webpage in a webpage (embed tag)) -->
+                <!-- usecases: inserting the maps videos , webpage or website in website ,advertisement etc -->
+                 <!-- syntax -->
+                  <!-- <iframe src="" frameborder="0" width="" height="" style="" referrerpolicy=""></iframe> -->
+
+                  <!-- google maps -->
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d121770.69076914486!2d78.3908864!3d17.4915584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748492763612!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <!-- website -->
+                  <iframe src="https://vajra.ai/" frameborder="0" width="100%" height="300px"></iframe>
+                  <iframe src="https://www.amazon.in/" frameborder="0" width="100%" height="300px"></iframe>
+
+                  <!-- youtube videos -->
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/2voCBpYfFI4?si=QO2NoJn3hFhap-mZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/Apj9ISyXr_s?si=hbXCFkDnmkdyDBVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<style>
+    /* combinators: describes the realtionship b/w more the one selector */
+    /* child selector */
+    /* div>p{
+     background-color: lightcoral;
+    } */
+    /* descendent selector (child+grandchild) */
+    /* div .c1{
+        color: blue;
+    } */
+    /* adjancent sibiling selector */
+    /* div+h3{
+     background-color: lightskyblue;
+    } */
+    /* genaral sibiling selctor */
+    /* div~h3{
+        color: red;
+        background-color: lime;
+    }
+    */
+    /* child format */
+    section>p{
+         color: orangered;
+    }
+    /* descendent format */
+    div .c1{
+        color: chartreuse;
+    }
+    /* genaral sibiling */
+    div~.c3{
+        color:pink
+    }
+     div+p{
+        color:rgb(203, 192, 255)
+    }
+</style>
+  </head>
+  <body>
+    <div><!-- parent element👨‍🎨-->
+      <h1>Examples</h1>
+      <p>paragraph</p> <!-- child element of div 👶 -->
+      <p>paragraph</p><!-- child element of div 🧒-->
+      <section><!-- child element of div -->
+        <p class="c1">paragraph</p><!-- child element of section 🐣🐣 (descent selector) -->
+        <h6>hello </h6>
+      </section>
+    </div>
+     <p>hegfdsghjk</p>
+     <h3>sibiling</h3> <!-- direct sibling element div (adjacent-sibiling) -->
+     <h3>sibiling</h3><!-- genral sibling element div -->
+     <p class="c3">sibiligggg</p>
+     <h3>hhhh</h3>
+      <p class="c3">sibiligggg</p>
+     <h3>hhhh</h3>
+       <p>sibiligggg</p>
+  </body>
+</html>
