@@ -52,4 +52,6 @@ DAY_6
 40.What problem does minmax() solve? Give example.
 41.What is subgrid?
 
+Me code Vachinda
+
 
