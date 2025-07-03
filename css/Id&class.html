@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            background-color: red;
+        }
+        .c1{
+            background-color: rgb(18, 242, 242);
+        }
+        .c2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id1">ID selector</h1>
+    <h1 id="footer" class="c2">ID selector</h1>
+    <h1 id="footer">ID selector</h1>
+    <h1 id="footer" class="c1">ID selector</h1>
+    <h3 class="c1 c2">Class selctor</h3>
+    <script>
+        document.getElementById("id1").innerHTML="hello"
+    </script>
+</body>
+</html>

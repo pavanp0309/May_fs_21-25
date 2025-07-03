@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *::after,*::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* syntax:----> ::pseudo-selector-name */
+        /* pseudo-imaginary */
+        /* applied to tag */
+        h4::selection{
+            background-color: orangered;
+        }
+        /* applied to tag with class selector */
+        .pseudo::selection{
+            background-color: aquamarine;
+        }
+        input::placeholder{
+            text-align: center;
+            text-transform: capitalize;
+            padding: 10px;
+            color: red;
+        }
+        .first::first-letter{
+            font-size: 2rem;
+            color: orangered;
+        }
+        .first-l::first-line{
+            background-color: gold;
+        }
+        ::marker{
+            content: "🎯 ";
+        }
+        .before-start::after{
+            content: "😎-end";
+        }
+        .after-start::before{
+             content: "🏎🚗";
+        }
+    </style>
+</head>
+<body>
+    <p class="pseudo">HELLO WELECOME TO PSEUDO_ELEMENTS</p>
+    <h4>HELLO WELECOME TO PSEUDO_ELEMENTS</h4>
+    <input type="text" placeholder="enter ur name">
+    <p class="first">HELLO WELECOME TO PSEUDO_ELEMENTS Next gen</p>
+    <p class="first-l">HELLO WELECOME TO PSEUDO_ELEMENTS Next gen</p>
+    <ul>
+        <li>item-1</li>
+        <li>Item-2</li>
+        <li>Items-2</li>
+    </ul>
+    <p class="before-start">START and coming soon to end</p>
+    <p class="after-start">START and coming soon to end</p>
+</body>
+</html>

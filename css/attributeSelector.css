@@ -1,0 +1,38 @@
+ form{
+    width: 250px ;
+    border: 2px solid black;
+    padding: 10px;
+ }
+input{
+ width: 200px;
+ padding: 10px;
+ margin-bottom: 2px;
+ display: block;
+ 
+}
+
+input[type="email"]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+    
+}
+
+input[type="password"]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+input[type="password"]::placeholder{
+    text-transform: capitalize;
+    color: orangered;
+}
+
+textarea[class="c1"]{
+ width: 200px;
+ padding: 10px;
+ margin-bottom: 2px;
+ display: block;
+ resize: none;
+}

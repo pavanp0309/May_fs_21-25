@@ -481,3 +481,8 @@ grid-row --------------------->shorthand
 align-self 
 justify-self 
 place-self
+
+
+
+PSEUDO_ELEMENTS : used for Selecting specific parts of an element
+ - ::first-letter, ::first-line, ::before, ::after, ::placeholder, ::marker, ::selection, etc.
