@@ -53,5 +53,23 @@ DAY_6
 41.What is subgrid?
 
 
+Day_7
+42.What is the difference between pseudo-classes and pseudo-elements?
+43 What’s the difference between :first-child and :nth-child(1)?
+44.Explain :not() vs :where() — how do they affect specificity?
+45.What problem does :is() solve? Give a real‑world selector example.
+46.What’s the difference between :focus, :focus-visible, and :focus-within?
+47.Why do we need content when using ::before and ::after?
+48. What’s the difference between ::first-line and ::first-letter?
+49.What does ::selection style? What are its limitations?
+50.Explain ::marker — what elements can it style?
+51.What’s the difference between [attr], [attr="value"], and [attr^="val"]?
+
+Day_8
+52.What is a media query in CSS, and why do we use them?
+53.Explain the difference between min-width and max-width in media queries
+54.What is the difference between screen, print, and all in media queries?
+55.What is the difference between em and px units in media queries?
+
 
 

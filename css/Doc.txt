@@ -265,20 +265,185 @@ Day_4
 colors
 text_properties
 FontProperties 
+backgrounds
+
+-----------------------------
+COLORS IN CSS
+-----------------------------
+CSS provides multiple ways to specify colors for text, backgrounds, borders, and other elements. Understanding these options helps you create visually appealing and accessible designs.
+
+1. Named Colors
+   - Use standard color names like red, blue, green, orange, pink, etc.
+   - Example: color: orangered;
+
+2. RGB and RGBA
+   - RGB: Uses Red, Green, Blue values (0-255).
+     Example: color: rgb(255, 0, 0); // red
+   - RGBA: Adds Alpha (opacity, 0-1).
+     Example: color: rgba(255, 0, 0, 0.5); // semi-transparent red
+
+3. HEX Colors
+   - Uses hexadecimal values (#RRGGBB or #RGB).
+   - Example: color: #ff0000; // red
+
+4. HSL and HSLA
+   - HSL: Hue (0-360), Saturation (0-100%), Lightness (0-100%).
+     Example: color: hsl(120, 100%, 50%); // green
+   - HSLA: Adds Alpha (opacity).
+     Example: color: hsla(120, 100%, 50%, 0.3);
+
+5. CSS Color Functions (Advanced)
+   - color-mix(): Mixes two colors.
+     Example: color: color-mix(in srgb, red 60%, blue 40%);
+   - color-contrast(): Ensures accessible contrast (browser support limited).
+
+6. Transparency
+   - Use rgba(), hsla(), or the opacity property.
+   - Example: opacity: 0.7; (applies to the whole element)
+
+Best Practices:
+- Use high-contrast color combinations for accessibility.
+- Prefer CSS variables for theme consistency.
+- Test colors on different devices and backgrounds.
+
+-----------------------------
+TEXT PROPERTIES
+-----------------------------
+CSS text properties control the appearance, alignment, spacing, and decoration of text.
+
+1. color: Sets the text color.
+2. text-align: left | right | center | justify
+   - Aligns text horizontally within its container.
+3. text-transform: none | uppercase | lowercase | capitalize
+   - Controls letter casing.
+4. text-decoration: underline | overline | line-through | none
+   - Adds lines to text (e.g., links).
+5. text-shadow: Adds shadow to text.
+   - Example: text-shadow: 2px 2px 4px #888;
+6. letter-spacing: Adjusts space between letters.
+7. word-spacing: Adjusts space between words.
+8. line-height: Controls vertical spacing between lines.
+9. text-indent: Indents the first line of text.
+10. direction: ltr | rtl (left-to-right or right-to-left text)
+
+Example:
+.headline {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+-----------------------------
+FONT PROPERTIES
+-----------------------------
+Font properties define the typeface, size, style, and weight of text.
+
+1. font-family: Specifies the font(s) to use.
+   - Example: font-family: 'Roboto', Arial, sans-serif;
+2. font-size: Sets the size of the font (px, em, rem, %, etc.).
+   - Example: font-size: 18px;
+3. font-weight: normal | bold | 100-900
+   - Example: font-weight: 700;
+4. font-style: normal | italic | oblique
+   - Example: font-style: italic;
+5. font-variant: normal | small-caps
+   - Example: font-variant: small-caps;
+6. font-stretch: normal | condensed | expanded
+7. font-feature-settings: Advanced typographic features (ligatures, etc.)
+8. @font-face: Import custom fonts.
+   - Example:
+     @font-face {
+       font-family: 'MyFont';
+       src: url('myfont.woff2') format('woff2');
+     }
+
+Shorthand:
+font: style weight size/line-height family;
+Example: font: italic bold 16px/1.5 'Roboto', sans-serif;
+
+-----------------------------
+BACKGROUND PROPERTIES (with Advanced Features)
+-----------------------------
+CSS background properties let you control the background color, images, gradients, and advanced effects for elements.
+
+1. background-color
+   - Sets the background color.
+   - Example: background-color: #f0f0f0;
+
+2. background-image
+   - Sets one or more background images (including gradients).
+   - Example: background-image: url('bg.jpg');
+   - Multiple images: background-image: url('img1.png'), url('img2.png');
+
+3. background-repeat
+   - Controls if/how the image repeats (repeat, no-repeat, repeat-x, repeat-y, space, round).
+   - Example: background-repeat: no-repeat;
+
+4. background-position
+   - Sets the starting position of the background image (left, right, center, top, bottom, or x/y values).
+   - Example: background-position: center top;
+
+5. background-size
+   - Controls the size of the background image (auto, cover, contain, or specific values).
+   - Example: background-size: cover;
+
+6. background-attachment
+   - Sets whether the background scrolls with the page (scroll, fixed, local).
+   - Example: background-attachment: fixed;
+
+7. background-clip
+   - Defines how far the background extends (border-box, padding-box, content-box).
+   - Example: background-clip: padding-box;
+
+8. background-origin
+   - Sets the positioning area for the background image (border-box, padding-box, content-box).
+   - Example: background-origin: content-box;
+
+9. background-blend-mode (Advanced)
+   - Blends background layers (images, gradients, colors) using blend modes (multiply, screen, overlay, etc.).
+   - Example: background-blend-mode: multiply;
+
+10. background-filter (Advanced, via filter property)
+    - Applies effects like blur, brightness, grayscale to backgrounds (using filter: on the element).
+    - Example: filter: blur(4px);
+
+11. Gradients (Advanced)
+    - linear-gradient: background-image: linear-gradient(to right, #f06, yellow);
+    - radial-gradient: background-image: radial-gradient(circle, #f06, yellow);
+    - conic-gradient: background-image: conic-gradient(from 90deg, red, yellow, green);
+
+12. Multiple Backgrounds
+    - You can layer multiple backgrounds by separating them with commas.
+    - Example:
+      background-image: url('pattern.png'), linear-gradient(to right, #f06, yellow);
+      background-blend-mode: multiply;
+
+13. background (Shorthand)
+    - Combines all background properties in one line.
+    - Example:
+      background: url('bg.jpg') no-repeat center/cover fixed;
 
 
-COLORS 
- 1.Default Colors :blue orangered ,cgreen ,pink etc... 
- 2.RGB
-  RGB:RED(0-255) GREEN(0-255)  BLUE(0-255)
-  RGBA:RED(0-255) GREEN  BLUE alpha (0-1)
- 3.HEX DECIMAL COLORS  (00-ff) (0-9 -a-f(255))
- 4.HSL 
-    HSL (HUE (0-360deg) SATURATION(0-100%) LIGHTNESS(0-100%))
-    HSLA (HUE (0-360deg) SATURATION(0-100%) LIGHTNESS(0-100%)) A-ALPHA(0-1)
- 5.LINEAR_GRADIENT COLORS  -- WORKS with only background-image property
- 6.conical_GRADIENT COLORS  -- WORKS with only background-image property
- 7.RADIAL_GRADIENT COLORS  -- WORKS with only background-image property
+-----------------------------
+EXAMPLES
+-----------------------------
+.banner {
+  background: linear-gradient(to right, #f06, yellow), url('bg.jpg') no-repeat center/cover;
+  background-blend-mode: multiply;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.frosted {
+  background: url('bg.jpg') center/cover;
+  filter: blur(4px);
+}
+
+.pattern {
+  background-image: url('pattern.png'), linear-gradient(135deg, #f06, yellow);
+  background-blend-mode: overlay;
+}
 
 
 DAY_5
@@ -443,46 +608,327 @@ You can add this section after your Animations notes for a complete CSS effects 
 
 
 DAY_6
-GRID 
+CSS Grid Layout is a powerful 2D layout system for the web. It allows you to design layouts in both rows and columns, making complex and responsive designs easy to build.
+REAL-WORLD USE CASES:
+- Responsive card layouts (product cards, service cards, profile cards)
+- Image galleries that adapt to screen size
+- Web page layouts (headers, sidebars, main content, footers)
+- Dashboards with flexible widgets or panels
+- Forms with multiple columns and rows
+- Blog or news feeds in a magazine-style grid
+- Calendar and scheduling apps
 
-GRID: IS USED FOR DEVELOPING 2D LAYOUTS (U CAN DESIGN A LAYOUT IN BOTH ROW AND COLUMNS)
+---
 
-GRID_PARENT _PROPERTIES 
-display:grid 
+GRID PARENT PROPERTIES
 
-grid-template-columns : px ,rem ,% ,auto ,1fr ,repeat(2,100px)
-grid-template-rows : px ,rem ,% ,auto ,1fr ,repeat(2,100px)
-gap:(shorthand property)
-grid-column-gap
-grid-row-gap
-justify-content:start |end |center |space-around | space-between |space-evenly
-align-content:start |end |center |space-around | space-between |space-evenly
-place-content: justify-content |align-content  --(shorthand)
-place-content: center;
-    align-content: center;
-    justify-content: center;
-justify-items:start |center|end|baseline |stretch
-align-items:start |center|end|baseline |stretch
-place-items:justify-items | align-items
-place-items: center start;
-    align-items: center;
-    justify-items: start;
- 
-grid-template-areas : 
+- display: grid;  // Enables grid layout on the container
+- grid-template-columns: Defines the number and size of columns. Supports px, rem, %, auto, 1fr, repeat(), minmax().
+  Example: grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+- grid-template-rows: Defines the number and size of rows. Supports px, rem, %, auto, 1fr, repeat().
+- gap: Shorthand for row and column gaps. Example: gap: 16px;
+- grid-row-gap / grid-column-gap: Set row or column gaps individually.
+- justify-content: Aligns the entire grid horizontally inside the container. Values: start, end, center, space-between, space-around, space-evenly
+- align-content: Aligns the entire grid vertically inside the container. Values: start, end, center, space-between, space-around, space-evenly
+- place-content: Shorthand for align-content and justify-content. Example: place-content: center;
+- justify-items: Aligns grid items horizontally within their cells. Values: start, end, center, stretch
+- align-items: Aligns grid items vertically within their cells. Values: start, end, center, stretch
+- place-items: Shorthand for align-items and justify-items. Example: place-items: center start;
+- grid-template-areas: Defines named areas for semantic and easy layout.
+  Example:
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
 
-Child_Properties 
-grid-area ---->shorthand for grid-column & grid-row 
-grid-column-start 
-grid-column-end 
-grid-column-------------->shorthand
-grid-row-start
-grid-row-end
-grid-row --------------------->shorthand
-align-self 
-justify-self 
-place-self
+---
+
+GRID CHILD PROPERTIES
+
+- grid-area: Shorthand for grid-row-start, grid-column-start, grid-row-end, grid-column-end or refers to a named area.
+- grid-column-start / grid-column-end: Specify where the item starts and ends on the column axis.
+- grid-column: Shorthand for grid-column-start / grid-column-end. Example: grid-column: 2 / 4;
+- grid-row-start / grid-row-end: Specify where the item starts and ends on the row axis.
+- grid-row: Shorthand for grid-row-start / grid-row-end. Example: grid-row: 1 / span 2;
+- align-self: Aligns a single grid item vertically within its cell.
+- justify-self: Aligns a single grid item horizontally within its cell.
+- place-self: Shorthand for align-self and justify-self. Example: place-self: center end;
+
+BEST PRACTICES
+- Use auto-fill/auto-fit with minmax() for responsive grids
+- Use fr units for flexible, proportional sizing
+- Use grid-template-areas for readable, maintainable layouts
+- Combine grid with media queries for advanced responsive designs
+- Nest grids for complex layouts
+
+---
+
+EXAMPLE
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+BLOCK vs INLINE-BLOCK vs INLINE ELEMENTS
+
+Definition:
+Block elements always start on a new line and take up the full width available (by default). They stack vertically.
+
+Key Points:
+You can set width, height, margin, and padding on all sides.
+Always starts on a new line.
+
+Common Block Elements:
+<div>, <h1>, <p>, <ul>, <li>, <section>, <header>, <footer>
+
+examples:
+<div style="background: lightblue;">Block 1</div>
+<div style="background: lightgreen;">Block 2</div>
+
+2. Inline Elements
+Definition:
+Inline elements do not start on a new line. They only take up as much width as necessary and flow within the surrounding text.
+
+Key Points:
+Cannot set width or height (it’s ignored).
+Margin and padding only affect left/right, not top/bottom.
+Does not force a line break.
+
+Common Inline Elements:
+<span>, <a>, <strong>, <em>, <img>, <label>
+example:
+<span style="background: yellow;">Inline 1</span>
+<span style="background: orange;">Inline 2</span>
 
 
+3. Inline-Block Elements
+Definition:
+Inline-block elements are like inline elements (they sit in a line with other elements), but you can set width and height
 
-PSEUDO_ELEMENTS : used for Selecting specific parts of an element
- - ::first-letter, ::first-line, ::before, ::after, ::placeholder, ::marker, ::selection, etc.
+Key Points:
+Sits inline with other elements (does not force a new line).
+You can set width, height, margin, and padding on all sides.
+Useful for creating button groups, navigation links, etc.
+
+example:
+<span style="display: inline-block; width: 100px; height: 40px; background: pink;">Inline-Block 1</span>
+<span style="display: inline-block; width: 100px; height: 40px; background: violet;">Inline-Block 2</span>
+
+1. display: none
+Definition:
+Completely removes the element from the document flow. The element is not visible, and it does not take up any space on the page.
+
+Example:
+.hide {
+  display: none;
+}
+
+visibility: hidden
+Definition:
+Hides the element, but it still takes up space in the layout. The element is invisible, but its position and size remain.
+
+.invisible {
+  visibility: hidden;
+}
+
+
+RWD:Responsive WEBDESIGN 
+
+Breakpoints:
+Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes 
+
+min:start point 
+max:end point 
+
+Extra small	None	<576px :nokia mobile jio mobile watchscreen
+Small	(sm)	≥576px : mobiles  
+Medium	(md)	≥768px :mobiles tabs 
+Large	(lg)	≥992px :tabs laptops,desktops
+Extra large	(xl)	≥1200px :desktops,laptops,tv 
+Extra extra large	(xxl)	≥1400px : desktops tv projectors etc..
+
+
+Media Queries
+ Conditional CSS rules that apply styles only when certain conditions match:
+e.g., screen width, orientation, resolution, user preferences.
+
+SYNTAX: 
+@media type (condition) {
+  /* CSS rules */
+}
+eg: @media screen and (min-width: 768px) and (orientation: portrait) { ... }
+
+Use Cases
+Responsive layouts (different grids for mobile, tablet, desktop)
+Dark mode
+High-resolution (Retina) graphics
+
+Types:
+
+screen:- Screen devices (default)
+print:-Print styles
+all :-	All devices
+and	:-Combine conditions
+, (comma)	OR :– apply if any condition matches
+not	:-Negate a condition
+only:-	Prevent older browsers from applying styles
+
+min-width:(start-point)Apply these styles when the screen is bigger than or equal to this width.
+max-width:(end-point):Apply these styles when the screen is smaller than or equal to this width.
+
+
+PSEUDO-ELEMENTS
+Definition:
+Pseudo-elements are used to style specific parts of an element, such as the first letter, first line, or to insert content before or after an element, without needing extra HTML.
+Syntax:
+Use a double colon :: (recommended) or a single colon : (for backward compatibility).
+
+syntax:
+selector::pseudo-element { /* styles */ }
+
+Common Pseudo-elements:
+
+::first-letter — Styles the first letter of a block element.
+::first-line — Styles the first line of a block element.
+::before — Inserts content before the element’s content.
+::after — Inserts content after the element’s content.
+::selection — Styles the portion of text selected by the user.
+::placeholder — Styles the placeholder text in input fields.
+::marker — Styles the marker of list items.
+
+Real-World Usage:
+
+Creating drop caps in articles (::first-letter)
+Adding icons or symbols before/after buttons or links (::before, ::after)
+Customizing selected text color (::selection)
+Styling placeholder text in forms (::placeholder)
+Styling list bullets or numbers (::marker)
+
+🎯 PSEUDO-CLASSES
+Definition:
+Pseudo-classes are used to define a special state of an element, such as when it is hovered, focused, the first child, or checked.
+
+Syntax:
+Use a single colon :.
+selector:pseudo-class { /* styles */ }
+
+Common and Advanced Pseudo-classes:
+
+:hover — When the mouse pointer is over the element.
+:active — When the element is being clicked.
+:focus — When the element (like an input) is focused.
+:visited — For links that have been visited.
+:first-child — When the element is the first child of its parent.
+:last-child — When the element is the last child of its parent.
+:nth-child(n) — When the element is the nth child.
+:nth-of-type(n) — When the element is the nth of its type among siblings.
+:first-of-type — When the element is the first of its type among siblings.
+:last-of-type — When the element is the last of its type among siblings.
+:only-child — When the element is the only child of its parent.
+:only-of-type — When the element is the only one of its type among siblings.
+:empty — When the element has no children (including text nodes).
+:checked — For checked checkboxes or radio buttons.
+:disabled — For disabled form elements.
+:enabled — For enabled form elements.
+:required — For required form fields.
+:optional — For optional form fields.
+:read-only — For read-only form fields.
+:read-write — For editable form fields.
+:not(selector) — Selects every element that does NOT match the selector.
+:root — Selects the root element (usually <html>).
+:target — Selects the element with an id matching the current URL fragment.
+:lang(language) — Selects elements with a specific language.
+
+Examples:
+input:focus { border: 2px solid blue; }
+li:nth-child(odd) { background: #f0f0f0; }
+input:required { border-left: 4px solid orange; }
+div:empty { display: none; }
+#section2:target { background: yellow; }
+
+GOLDEN Rule
+Pseudo-elements let you style or add to part of an element’s content.
+Pseudo-classes let you style elements based on their state or position.
+
+
+ATTRIBUTE SELECTORS
+-------------------
+Definition:
+Attribute selectors allow you to select and style HTML elements based on the presence or value of their attributes. They are powerful for targeting elements without needing extra classes or IDs.
+
+Syntax:
+selector[attribute] { /* styles */ }
+selector[attribute="value"] { /* styles */ }
+selector[attribute^="value"] { /* styles */ }
+selector[attribute$="value"] { /* styles */ }
+selector[attribute*="value"] { /* styles */ }
+selector[attribute|="value"] { /* styles */ }
+selector[attribute~="value"] { /* styles */ }
+
+Types & Examples:
+
+1. [attribute]
+   - Selects elements with the specified attribute, regardless of value.
+   - Example: input[required] { border-left: 4px solid orange; }
+
+2. [attribute="value"]
+   - Selects elements with the exact attribute value.
+   - Example: a[target="_blank"] { color: red; }
+
+3. [attribute^="value"]
+   - Selects elements whose attribute value starts with the given value.
+   - Example: img[src^="https://"] { border: 2px solid green; }
+
+4. [attribute$="value"]
+   - Selects elements whose attribute value ends with the given value.
+   - Example: a[href$=".pdf"] { font-weight: bold; }
+
+5. [attribute*="value"]
+   - Selects elements whose attribute value contains the given value anywhere.
+   - Example: div[class*="card"] { box-shadow: 0 2px 8px #ccc; }
+
+6. [attribute|="value"]
+   - Selects elements whose attribute value is exactly "value" or starts with "value-" (useful for language codes).
+   - Example: p[lang|="en"] { color: blue; }
+
+7. [attribute~="value"]
+   - Selects elements whose attribute value is a space-separated list of words, one of which is exactly "value".
+   - Example: [title~="important"] { background: yellow; }
+
+Real-World Use Cases:
+- Style all external links: a[target="_blank"]
+- Highlight required form fields: input[required]
+- Style images from a CDN: img[src^="https://cdn.example.com"]
+- Target download links: a[download]
+- Style elements with data attributes: [data-role="admin"]
+
+
+Advanced Example:
+/* Style all buttons with a data-action attribute that starts with 'save' */
+button[data-action^="save"] {
+  background: green;
+  color: white;
+}
+
+Summary Table:
+| Selector                | Matches                                      |
+|-------------------------|----------------------------------------------|
+| [attr]                  | Has attribute                                |
+| [attr="value"]          | Attribute equals value                       |
+| [attr^="value"]         | Attribute starts with value                  |
+| [attr$="value"]         | Attribute ends with value                    |
+| [attr*="value"]         | Attribute contains value                     |
+| [attr|="value"]         | Attribute is value or starts with value-     |
+| [attr~="value"]         | Attribute contains value as a word           |
+
+Attribute selectors are essential for modern, scalable CSS—especially when working with dynamic content, forms, or data attributes.
+
+

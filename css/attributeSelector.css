@@ -36,3 +36,27 @@ textarea[class="c1"]{
  display: block;
  resize: none;
 }
+
+/* exactly it need to match */
+/* p[class="text"]{
+  background-color: lightcyan;
+} */
+
+/* the Word starts with ^ */
+/* p[class^="text"]{
+ color: red;
+} */
+
+/* the ends starts with ^ */
+/* p[class$="text"]{
+ color: blue;
+} */
+
+/* matches all the Words */
+/* p[class*="text"]{
+ color: green;
+} */
+p[class|="text"]{
+ color: rgb(0, 41, 128);
+ background-color: orange;
+}

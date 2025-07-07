@@ -1,0 +1,6 @@
+
+1.explain Z_index ?
+2.explian the difference blw position absolute and relative
+3.explain the difference b/w transform transitions and animations
+4.explain the difference b/w flex and grid system 
+5.explain the difference id and class selector?

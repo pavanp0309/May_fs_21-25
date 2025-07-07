@@ -1,0 +1,56 @@
+body{
+    background-color: aqua;
+}
+
+/* for all screens */
+h1{
+    text-transform: lowercase;
+}
+
+/* small screen */
+@media screen and (min-width:100px) and  (max-width:576px){
+
+    /* coditional style */
+    body{
+        background-color: rgb(0, 255, 30);
+    }
+    p{
+        text-align: center;
+        font-size: 3em;
+    }
+    h1{
+    text-transform: capitalize;
+}
+}
+
+/* medium screen */
+@media screen and (min-width:577px) and (max-width:768px) {
+     body{
+        background-color: orangered;
+        display: grid;
+        place-content: center center ;
+        height: 100vh;
+     }
+     p{
+        font-size: 2.5rem;
+        font-weight: bold;
+     }
+         h1{
+    text-transform: uppercase;
+}
+}
+
+
+/* larger screen */
+@media screen and (min-width:769px) and (max-width:992px) {
+     body{
+        background-color: rgb(255, 0, 242);
+        display: grid;
+        place-content: start center ;
+        height: 100vh;
+     }
+     p{
+        font-size: 2.5rem;
+        font-weight: bold;
+     }
+}
