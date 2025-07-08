@@ -1,0 +1,66 @@
+/* universal styles */
+*{
+    box-sizing: border-box;
+}
+/* common styles for all layouts */
+.container{
+
+}
+
+/* styles for service_section */
+.service-section{
+    
+}
+/* card_parent style */
+.services{
+ display: flex; /* horizontal direction for larger screen */
+ justify-content: space-around;
+
+}
+
+/* .card style(common style) */
+.service-card{
+ background-color: rgb(234, 246, 245);
+ text-align: center;
+ width: 250px;
+ height: 200px;
+ border-radius: 10px;
+ border: 1px solid black;
+ padding: .97rem;
+ box-shadow: 3px 4px 5px rgb(166, 236, 235);
+}
+.bi{
+    font-size: 30px;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/* media_Queries for small screen */
+@media screen and (min-width:100px)  and (max-width:576px){
+.services{
+ display: flex;
+ height: 100vh;
+ flex-direction: column; /* vertical direction for small screens */
+ justify-content: space-around;
+ align-items: center;
+}
+.service-card{
+         width: 304px;
+        height: 161px;
+}
+}
+/* media_Queries for medium screen */
+@media screen and (min-width:577px)  and (max-width:768px){
+.services{
+ display: flex;
+ flex-wrap: wrap;
+}
+.service-card{
+width: 303px;
+height: 180px;
+margin-bottom: 18px;
+}
+}
