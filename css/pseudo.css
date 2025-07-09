@@ -1,0 +1,103 @@
+
+/* pseudo_class :  selector:pseudo-class */
+/* default color for link: blue */
+a:link{
+ color:deeppink
+}
+a:visited{
+ color: red;
+}
+a:hover{
+    color: rgb(27, 235, 228);
+}
+a:active{
+ color: green;
+}
+
+li:nth-child(even){
+ color:red;
+ text-transform: capitalize;
+}
+li:nth-child(2n+1){
+ color:rgb(0, 13, 255);
+ text-transform:uppercase;
+}
+li:last-child{
+    background-color: gold;
+}
+li:first-child{
+    background-color: gold;
+}
+
+/* p:not(.dog){
+    color: orangered;
+}
+
+:is(.c1,h1){
+    color: red;
+} */
+
+input[type="text"]:focus{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(15, 206, 47);
+   padding: 10px;
+   transition: all .2s linear;
+   background-color:orangered;
+   color: white;
+}
+input:required{
+    border: 2px solid red;
+    margin-bottom: 2px;
+}
+input:disabled{
+    background-color: grey;
+    color:white;
+}
+input:read-only{
+    background-color: aqua;
+}
+input:valid{
+    background-color: green;
+    color: aliceblue;
+}
+input:invalid{
+    background-color: red;
+    color: white;
+}
+input:checked+label{
+    border: 2px solid red;
+    background-color: gold;
+}
+textarea{
+    resize: none;
+}
+div:has(p){
+    color: red;
+}
+:root{
+    --primary-color:rgb(47, 255, 0);
+    --secondary-color:rgb(216, 213, 8);
+    --border:2px dotted rgb(128, 0, 96);
+    --padding:10px;
+}
+
+.para1{
+    background-color:var(--primary-color);
+}
+.para2{
+    background-color: var(--primary-color);
+    border: var(--border);
+}
+.para3{
+    background-color: var(--secondary-color);
+}
+.para4{
+    background-color:var(--secondary-color);
+}
+.para5{
+    background-color:var(--primary-color);
+}
+.para6{
+    background-color:var(--primary-color);
+}
