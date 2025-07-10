@@ -190,7 +190,7 @@ DIFFERENT TYPES OF Position Properties
 2.Position:Relative 
  if no element present in the doc it moves from root of doc if any elemnent present it moves realtive to previous element or parent
 3.Position:absolute  
-it comes out of normal document flow and starts movind from root emlement until and unless its parent is applied with some  position like realtive or absolute 
+it comes out of normal document flow and starts moving from root emlement until and unless its parent is applied with some  position like realtive or absolute 
 4.Position:fixed
 5.Position:sticky 
 

@@ -1,0 +1,17 @@
+.card{
+    border: 2px solid green;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    /* position: relative; */
+}
+.moving{
+    background-color: orangered;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position:absolute ;
+    top:10px;
+    left:10px;
+    bottom: 100px;
+}
