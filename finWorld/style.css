@@ -6,3 +6,51 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+
+
+/* navbar styles */
+.bg-nav-primary{
+ background-color: #0D1B2A; 
+ border-bottom:0.1px solid white ;
+}
+.navbar-brand{
+   color:white ;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: gold;
+}
+
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    background-color: #0D1B2A;
+    overflow: hidden;
+}
+
+.hero::before{
+    content: " ";
+    position:absolute;
+    top: 0;bottom: 0; left: 0;right: 0;
+    background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.05) 2px ,transparent 1px)
+    ;
+    background-size: 50px 50px;
+    z-index: 1;
+    animation: hero 20s linear 0s infinite alternate forwards;
+}
+.hero .container{
+    position: relative;
+    z-index: 2;
+}
+@keyframes hero {
+    from{
+       background-position: 0 0 ,0 0;
+    }to{
+   background-position: 40px 40px ,40px 40px;
+    }
+}
