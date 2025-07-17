@@ -47,6 +47,54 @@
     position: relative;
     z-index: 2;
 }
+
+.footer{
+     background-color: #0D1B2A;
+     color: white;
+     border-top:.5px solid white ;
+}
+
+.footer-title{
+    color: gold;
+}
+.footer ul>li{
+    transition: all .2s linear;
+}
+.footer ul>li:hover{
+    font-weight: bold;
+    display: inline;
+    border-bottom: 1px solid gold;
+}
+.footer_brand_links .bi{
+    transition: all .3s linear;
+}
+.footer_brand_links .bi:hover{
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes hero {
     from{
        background-position: 0 0 ,0 0;
