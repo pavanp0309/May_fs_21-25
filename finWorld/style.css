@@ -86,26 +86,39 @@
   border-top: 0.5px solid white;
 }
 
-.bg-subscribe{
+.bg-subscribe {
   background-color: rgb(222, 191, 17);
-   background-image:
-    linear-gradient(0deg,rgba(245, 239, 239, 0.221) 1px, transparent 1px),
-    linear-gradient(90deg,rgba(246, 240, 240, 0.142) 1px ,transparent 1px);
-    background-size: 50px 50px;
+  background-image:
+    linear-gradient(0deg, rgba(245, 239, 239, 0.221) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(246, 240, 240, 0.142) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
-.btn-sub{
+
+.btn-sub {
   background-color: white;
   width: 200px;
   padding: 10px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
-.bg-model{
+
+.btn-sub:hover {
   background-color: #0D1B2A;
-  color: white;
+  color: gold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.model-img{
-  width: 100%;
-  height: 150px;
+
+.bg-model {
+  background-color: #fdfaf0;
 }
+
+.model-img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 
 /* service section styles */
 .service-img{
@@ -123,6 +136,51 @@
 .carousel-item img{
   width: 100%;
   height: 250px;
+}
+/* .parallax-section start*/
+.parallax-section{
+  background-image: url('./assets/c1.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+  position: relative;
+  z-index: 1;
+}
+
+.parallax-img{
+  width: 50px;
+  height: 50px;
+}
+
+/* consultant-card styles */
+.consultant-card{
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+.consultant-img{
+  width: 100%;
+  height:300px ;
+  object-fit: cover;
+  transition: all .5s ease-in-out;
+  
+}
+.consultant-card:hover .consultant-img {
+  transform: scale(1.2);
+}
+.overlay-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity:0 ;
+  transition: opacity .3s ease;
+
+}
+.consultant-card:hover .overlay-icon{
+  opacity:1 ;
 }
 
 
