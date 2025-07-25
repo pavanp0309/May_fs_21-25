@@ -184,6 +184,26 @@
 }
 
 
+.scrollbar-wapper{
+
+  animation: scroll-left 20s linear 0s infinite;
+  width: max-content;
+}
+.scrollbar-wapper:hover{
+  animation-play-state: paused;
+}
+@keyframes scroll-left {
+  0%{
+    transform: translateX(0%);
+  }100%{
+   transform: translateX(-50%);
+  }
+}
+
+.form-image{
+  width: 100%;
+  height: 100%;
+}
 
 
 
